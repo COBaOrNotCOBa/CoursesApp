@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text.Courses.Headline" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/courses_text_primary</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Text.Courses.TitleHeader" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/courses_text_primary</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Text.Courses.TitleMedium" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/courses_text_primary</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Text.Courses.BodyMedium" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/courses_text_primary</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Text.Courses.BodySmall" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/courses_text_secondary</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Text.Courses.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/courses_white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Text.Courses.Button.Small" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/courses_primary_green</item>
+        <item name="android:letterSpacing">0.4</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Text.Courses.LabelMedium" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/courses_white</item>
+        <item name="android:letterSpacing">0.5</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Widget.Courses.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:textAppearance">@style/Text.Courses.Button</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Widget.Courses.Button.Social.Vk" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/bg_button_vk</item>
+        <item name="backgroundTint">@null</item>
+
+        <item name="android:minHeight">40dp</item>
+        <item name="cornerRadius">30dp</item>
+
+        <item name="android:textAppearance">@style/Text.Courses.Button</item>
+
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <style name="Widget.Courses.Button.Social.Ok" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/bg_button_ok</item>
+        <item name="backgroundTint">@null</item>
+
+        <item name="android:minHeight">40dp</item>
+        <item name="cornerRadius">30dp</item>
+
+        <item name="android:textAppearance">@style/Text.Courses.Button</item>
+
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <style name="Widget.Courses.TextInputLayout"
+        parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+        <item name="boxBackgroundColor">@color/courses_surface_light</item>
+
+        <item name="boxCornerRadiusTopStart">30dp</item>
+        <item name="boxCornerRadiusTopEnd">30dp</item>
+        <item name="boxCornerRadiusBottomStart">30dp</item>
+        <item name="boxCornerRadiusBottomEnd">30dp</item>
+
+        <item name="hintTextColor">@color/courses_text_secondary</item>
+
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+
+        <item name="hintEnabled">false</item>
+    </style>
+
+    <style name="Widget.Courses.TextInputEditText"
+        parent="Widget.MaterialComponents.TextInputEditText.FilledBox.Dense">
+
+        <item name="android:textColor">@color/courses_text_primary</item>
+        <item name="android:textAppearance">@style/Text.Courses.BodyMedium</item>
+
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+
+        <item name="android:textColorHint">@color/courses_text_secondary</item>
+    </style>
+
+
+    <style name="Widget.Courses.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/courses_surface_dark</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style>
+
+    <style name="Widget.Courses.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/courses_surface_dark</item>
+        <item name="itemIconTint">@color/courses_nav_item_tint</item>
+        <item name="itemTextColor">@color/courses_nav_item_tint</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemHorizontalTranslationEnabled">false</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <style name="Text.Courses.ActionWhite" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/courses_text_primary</item>
+        <item name="android:fontFamily">@font/roboto_semi_bold</item>
+    </style>
+
+    <style name="Text.Courses.ActionGreen" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/courses_primary_green</item>
+        <item name="android:fontFamily">@font/roboto_semi_bold</item>
+    </style>
+
+</resources>

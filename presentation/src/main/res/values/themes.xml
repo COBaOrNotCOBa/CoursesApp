@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="Theme.CoursesApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/courses_primary_green</item>
+        <item name="colorPrimaryVariant">@color/courses_primary_green</item>
+        <item name="colorOnPrimary">@color/courses_white</item>
+
+        <item name="colorSecondary">@color/courses_accent_blue</item>
+        <item name="colorOnSecondary">@color/courses_white</item>
+
+        <item name="colorSurface">@color/courses_surface_dark</item>
+        <item name="colorOnSurface">@color/courses_text_primary</item>
+
+        <item name="android:colorBackground">@color/courses_background_dark</item>
+        <item name="colorOnBackground">@color/courses_text_primary</item>
+
+        <item name="android:windowBackground">@color/courses_background_dark</item>
+        <item name="android:statusBarColor">@color/courses_background_dark</item>
+        <item name="android:navigationBarColor">@color/courses_surface_dark</item>
+
+        <item name="textAppearanceHeadlineLarge">@style/Text.Courses.Headline</item>
+        <item name="textAppearanceTitleLarge">@style/Text.Courses.TitleHeader</item>
+        <item name="textAppearanceTitleMedium">@style/Text.Courses.TitleMedium</item>
+        <item name="textAppearanceBodyMedium">@style/Text.Courses.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/Text.Courses.BodySmall</item>
+        <item name="textAppearanceLabelMedium">@style/Text.Courses.LabelMedium</item>
+
+        <item name="materialButtonStyle">@style/Widget.Courses.Button.Primary</item>
+        <item name="materialCardViewStyle">@style/Widget.Courses.Card</item>
+        <item name="bottomNavigationStyle">@style/Widget.Courses.BottomNavigation</item>
+        <item name="textInputStyle">@style/Widget.Courses.TextInputLayout</item>
+
+    </style>
+
+</resources>
