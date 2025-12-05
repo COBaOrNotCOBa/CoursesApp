@@ -1,18 +1,21 @@
 package com.example.data.repository
 
+import com.example.data.local.database.CourseEntity
 import com.example.data.remote.model.RemoteCourse
 import com.example.domain.model.Course
 
-fun RemoteCourse.toDomainCourse(isFavorite: Boolean): Course {
-    val courseId = id.toString()
-
+fun RemoteCourse.toCourseEntity(previousFavorite: Boolean?): CourseEntity {
     val normalizedPrice = price.filter { it.isDigit() }
     val priceInt = normalizedPrice.toIntOrNull() ?: 0
 
     val rateNormalized = rate.replace(',', '.')
     val rateDouble = rateNormalized.toDoubleOrNull() ?: 0.0
 
-    return Course(
+    val courseId = id.toString()
+
+    val isFavorite = previousFavorite ?: hasLike
+
+    return CourseEntity(
         id = courseId,
         title = title,
         text = text,
@@ -20,6 +23,17 @@ fun RemoteCourse.toDomainCourse(isFavorite: Boolean): Course {
         rate = rateDouble,
         startDate = startDate,
         publishDate = publishDate,
-        hasLike = isFavorite
+        isFavorite = isFavorite
     )
 }
+
+fun CourseEntity.toDomainCourse(): Course = Course(
+    id = id,
+    title = title,
+    text = text,
+    price = price,
+    rate = rate,
+    startDate = startDate,
+    publishDate = publishDate,
+    hasLike = isFavorite
+)

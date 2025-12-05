@@ -1,6 +1,6 @@
 package com.example.data.di
 
-import com.example.data.repository.CoursesRepositoryImplementation
+import com.example.data.repository.CoursesRepositoryImpl
 import com.example.domain.repository.CoursesRepository
 import dagger.Binds
 import dagger.Module
@@ -15,6 +15,6 @@ abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun bindCoursesRepository(
-        implementation: CoursesRepositoryImplementation
+        implementation: CoursesRepositoryImpl
     ): CoursesRepository
 }

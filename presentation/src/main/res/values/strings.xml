@@ -11,14 +11,13 @@
 
     <string name="login_button_text">Вход</string>
 
-    <string name="login_action_no_account">Нету аккаунта?</string>
+    <string name="login_action_no_account">Нет аккаунта?</string>
     <string name="login_action_register">Регистрация</string>
     <string name="login_action_forgot_password">Забыл пароль</string>
 
-    <!-- Поиск/фильтр/сортировка -->
-    <string name="home_search_hint">Поиск по курсам</string>
+    <string name="home_search_hint">Search courses...</string>
     <string name="home_filter_icon_desc">Кнопка фильтрации курсов</string>
-    <string name="home_sort_by_date">Сначала новые</string>
+    <string name="home_sort_by_date">По дате добавления</string>
     <string name="home_sort_icon_desc">Изменить порядок сортировки</string>
 
     <string name="course_title_placeholder">Название курса</string>
@@ -32,5 +31,14 @@
     <string name="course_cover_content_desc">Обложка курса</string>
     <string name="course_bookmark_content_desc">Добавить курс в избранное</string>
     <string name="course_more_button">Подробнее ➜</string>
+
+    <string name="bottom_nav_home">Главная</string>
+    <string name="bottom_nav_favorites">Избранное</string>
+    <string name="bottom_nav_account">Аккаунт</string>
+
+    <string name="account_STUB">Аккаунт (заглушка)</string>
+
+    <string name="favorites_favorites">Избранное</string>
+    <string name="favorites_empty">В избранном пока нет курсов</string>
 
 </resources>

@@ -3,13 +3,17 @@
 
     <item
         android:id="@+id/homeFragment"
-        android:title="Главная" />
+        android:icon="@drawable/ic_home"
+        android:title="@string/bottom_nav_home" />
 
     <item
         android:id="@+id/favoritesFragment"
-        android:title="Избранное" />
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/bottom_nav_favorites" />
 
     <item
         android:id="@+id/accountFragment"
-        android:title="Аккаунт" />
+        android:icon="@drawable/ic_account"
+        android:title="@string/bottom_nav_account" />
+
 </menu>

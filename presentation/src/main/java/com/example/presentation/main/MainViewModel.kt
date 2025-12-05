@@ -61,16 +61,8 @@ class MainViewModel @Inject constructor(
 
     fun onSortByPublishDateClicked() {
         _uiState.update { currentState ->
-            val newIsSortedFlag = !currentState.isSortedByPublishDate
-            val sortedCourses = if (newIsSortedFlag) {
-                coursesUseCases.sortCoursesByPublishDate(currentState.courses)
-            } else {
-                currentState.courses
-            }
-
             currentState.copy(
-                isSortedByPublishDate = newIsSortedFlag,
-                courses = sortedCourses
+                courses = coursesUseCases.sortCoursesByPublishDate(currentState.courses)
             )
         }
     }

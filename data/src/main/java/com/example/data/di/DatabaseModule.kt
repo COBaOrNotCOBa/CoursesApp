@@ -2,8 +2,8 @@ package com.example.data.di
 
 import android.content.Context
 import androidx.room.Room
+import com.example.data.local.database.CoursesDao
 import com.example.data.local.database.CoursesDatabase
-import com.example.data.local.database.FavoriteCourseDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,9 +29,7 @@ object DatabaseModule {
 
     @Provides
     @Singleton
-    fun provideFavoriteCourseDao(
+    fun provideCoursesDao(
         database: CoursesDatabase
-    ): FavoriteCourseDao {
-        return database.favoriteCourseDao()
-    }
+    ): CoursesDao = database.coursesDao()
 }

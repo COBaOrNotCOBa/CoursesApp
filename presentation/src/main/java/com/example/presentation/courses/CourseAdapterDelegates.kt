@@ -21,23 +21,19 @@ fun courseAdapterDelegate(
         val course = item
 
         with(binding) {
-            // Текстовые данные
             textTitle.text = course.title
             textDescription.text = course.text
             textPrice.text = "${course.price} ₽"
-            textPublishDate.text = course.startDate
+            textPublishDate.text = course.publishDate.toRuReadableDate()
             textRating.text = course.rate.toString()
 
-            // TODO: сюда позже можно повесить загрузку обложки (Glide / Coil / Picasso)
-            // imageCover.setImageResource(...)
+            // TODO: сюда позже можно повесить загрузку обложки (Glide / Coil)
 
-            // Избранное (иконка в кружке)
             updateFavoriteIcon(
                 imageView = imageBookmark,
                 isFavorite = course.hasLike
             )
 
-            // Обработчик нажатия по избранному – по иконке и по контейнеру
             layoutBookmark.setOnClickListener {
                 onFavoriteButtonClick(course)
             }
@@ -55,9 +51,9 @@ private fun updateFavoriteIcon(
     val context = imageView.context
 
     val drawableRes = if (isFavorite) {
-        R.drawable.ic_favorite_on  // «зажжённое» избранное
+        R.drawable.ic_favorite_on
     } else {
-        R.drawable.ic_favorite     // обычный контур
+        R.drawable.ic_favorite
     }
 
     val tintColor = if (isFavorite) {

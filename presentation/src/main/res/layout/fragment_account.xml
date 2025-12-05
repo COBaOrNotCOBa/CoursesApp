@@ -7,12 +7,12 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Экран-заглушка аккаунта -->
     <TextView
         android:id="@+id/textViewAccountPlaceholder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Аккаунт (заглушка)"
+        android:text="@string/account_STUB"
+        android:textColor="@color/courses_pure_white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

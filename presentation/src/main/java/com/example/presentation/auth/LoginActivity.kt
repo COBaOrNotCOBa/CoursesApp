@@ -78,7 +78,6 @@ class LoginActivity : AppCompatActivity() {
 
         binding.buttonLogin.setOnClickListener {
             if (binding.buttonLogin.isEnabled) {
-                viewModel.onLoginClicked()
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
