@@ -1,0 +1,21 @@
+<resources>
+    <string name="home_search_hint">Search courses...</string>
+    <string name="home_filter_icon_desc">Кнопка фильтрации курсов</string>
+    <string name="home_sort_by_date">По дате добавления</string>
+    <string name="home_sort_icon_desc">Изменить порядок сортировки</string>
+
+    <string name="course_title_placeholder">Название курса</string>
+    <string name="course_description_placeholder">
+        Краткое описание курса в две строки максимум.
+    </string>
+    <string name="course_price_placeholder">990 ₽</string>
+    <string name="course_rating_placeholder">4.9</string>
+    <string name="course_publish_date_placeholder">22 Мая 2024</string>
+
+    <string name="course_cover_content_desc">Обложка курса</string>
+    <string name="course_bookmark_content_desc">Добавить курс в избранное</string>
+    <string name="course_more_button">Подробнее ➜</string>
+    <string name="course_price_template">%1$d ₽</string>
+    <string name="error_courses_loading">Ошибка загрузки курсов</string>
+</resources>
+

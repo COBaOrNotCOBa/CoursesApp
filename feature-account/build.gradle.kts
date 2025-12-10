@@ -1,22 +1,18 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
 }
 
 android {
-    namespace = "com.example.coursesapp"
+    namespace = "com.example.presentation.account"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.coursesapp"
         minSdk = 26
-        targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -45,30 +41,14 @@ kotlin {
 
 dependencies {
     implementation(project(":core-ui"))
-    implementation(project(":feature-auth"))
-    implementation(project(":feature-main"))
-    implementation(project(":feature-home"))
-    implementation(project(":feature-favorites"))
-    implementation(project(":feature-account"))
-    implementation(project(":data"))
-    implementation(project(":domain"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
-
-    implementation(libs.navigation.fragment.ktx)
-    implementation(libs.navigation.ui.ktx)
-
-    implementation(libs.lifecycle.runtime.ktx)
-
-    implementation(libs.coroutines.android)
+    implementation(libs.androidx.constraintlayout)
 
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
-
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
 }
+

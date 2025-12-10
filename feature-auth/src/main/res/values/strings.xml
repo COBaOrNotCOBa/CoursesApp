@@ -1,0 +1,12 @@
+<resources>
+    <string name="login_title">Вход</string>
+    <string name="login_email_label">Email</string>
+    <string name="login_password_label">Пароль</string>
+    <string name="login_email_hint">example@gmail.com</string>
+    <string name="login_password_hint">Введите пароль</string>
+    <string name="login_button_text">Вход</string>
+    <string name="login_action_no_account">Нет аккаунта?</string>
+    <string name="login_action_register">Регистрация</string>
+    <string name="login_action_forgot_password">Забыл пароль</string>
+</resources>
+
