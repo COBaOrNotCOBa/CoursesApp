@@ -32,11 +32,16 @@
 
 - **Язык:** Kotlin
 - **Минимальная версия Android:** API 26 (Android 8.0)
-- **Модули:**
-    - `app` — точка входа, DI и конфигурация приложения.
-    - `presentation` — экраны, ViewModel’и, адаптеры, навигация, стили.
+- **Модули (многомодульная фича-архитектура):**
+    - `app` — точка входа, подключает фичи/core/data/domain.
+    - `core-ui` — общие ресурсы (стили, цвета, иконки, шрифты) и утилиты (`ResourceProvider`).
+    - `feature-auth` — экран логина.
+    - `feature-main` — `MainActivity`, bottom navigation, nav-graph.
+    - `feature-home` — список курсов, адаптеры, `MainViewModel`/`MainUiState`.
+    - `feature-favorites` — экран избранного.
+    - `feature-account` — заглушка профиля.
     - `domain` — бизнес-модели, интерфейсы репозиториев, use case’ы.
-    - `data` — работа с сетью и базой данных.
+    - `data` — работа с сетью и базой данных (Retrofit, Room).
 - **UI:**
     - XML-разметка, ViewBinding.
     - Material Components, кастомная цветовая схема и типографика.
