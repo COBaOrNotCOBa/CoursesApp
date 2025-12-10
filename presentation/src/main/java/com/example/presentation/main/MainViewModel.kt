@@ -3,6 +3,8 @@ package com.example.presentation.main
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.domain.usecase.CoursesUseCases
+import com.example.presentation.R
+import com.example.presentation.common.ResourceProvider
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -13,7 +15,8 @@ import kotlinx.coroutines.launch
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
-    private val coursesUseCases: CoursesUseCases
+    private val coursesUseCases: CoursesUseCases,
+    private val resourceProvider: ResourceProvider
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(MainUiState(isLoading = true))
@@ -52,7 +55,8 @@ class MainViewModel @Inject constructor(
                 _uiState.update { currentState ->
                     currentState.copy(
                         isLoading = false,
-                        errorMessage = throwable.message ?: "Ошибка загрузки курсов"
+                        errorMessage = throwable.message?.takeIf { it.isNotBlank() }
+                            ?: resourceProvider.getString(R.string.error_courses_loading)
                     )
                 }
             }

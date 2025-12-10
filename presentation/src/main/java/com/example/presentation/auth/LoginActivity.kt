@@ -84,11 +84,11 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.buttonVk.setOnClickListener {
-            openUrlInBrowser("https://vk.com/")
+            openUrlInBrowser(AuthExternalLinks.VK_URL)
         }
 
         binding.buttonOk.setOnClickListener {
-            openUrlInBrowser("https://ok.ru/")
+            openUrlInBrowser(AuthExternalLinks.OK_URL)
         }
     }
 

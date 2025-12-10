@@ -23,7 +23,8 @@ fun courseAdapterDelegate(
         with(binding) {
             textTitle.text = course.title
             textDescription.text = course.text
-            textPrice.text = "${course.price} ₽"
+            textPrice.text =
+                root.context.getString(R.string.course_price_template, course.price)
             textPublishDate.text = course.publishDate.toRuReadableDate()
             textRating.text = course.rate.toString()
 

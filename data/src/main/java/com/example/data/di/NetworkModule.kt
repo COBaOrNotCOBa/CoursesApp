@@ -47,7 +47,7 @@ object NetworkModule {
         val contentType = "application/json".toMediaType()
 
         return Retrofit.Builder()
-            .baseUrl(COURSES_BASE_URL)
+            .baseUrl(NetworkConfig.COURSES_BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(json.asConverterFactory(contentType))
             .build()
@@ -59,5 +59,3 @@ object NetworkModule {
         return retrofit.create(CoursesService::class.java)
     }
 }
-
-private const val COURSES_BASE_URL = "https://drive.usercontent.google.com/"
